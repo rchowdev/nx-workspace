@@ -1,0 +1,22 @@
+{
+  "npmScope": "nx-workspace",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "tv-shows": {
+      "tags": []
+    },
+    "tv-shows-e2e": {
+      "tags": [],
+      "implicitDependencies": ["tv-shows"]
+    }
+  }
+}
